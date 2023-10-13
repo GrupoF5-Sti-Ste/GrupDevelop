@@ -13,7 +13,7 @@
     margin-top: 2%;
 }
 input{
-     padding: 10px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -24,6 +24,8 @@ input{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    width: 70%;
+    margin-left: 5%;
     
 }
 button{
@@ -45,6 +47,7 @@ button{
 .input-icon {
     position: relative;
     margin-bottom: 1%;
+   
 }
 
 .input-icon input {
@@ -53,12 +56,12 @@ button{
 
 .input-icon .fa {
     position: absolute;
-    left: 10px;
+    left: 25px;
     top: 30%;
     transform: translateY(-50%);
     color: gray;
     font-size: 20px;
-   color:aqua;
+    color:aqua;
 
 
 }
@@ -75,13 +78,8 @@ button{
   
 
 }
-@media
- (max-width: 650px) {
-
-
- 
-    input{
-   
+@media only screen and (max-width: 650px) and (min-resolution: 300dpi) {
+    input {
         padding: 5px;
         border-radius: 5px;
         border: none;
@@ -94,5 +92,4 @@ button{
         font-weight: bold;
         text-align: center;
     }
-    
 }
