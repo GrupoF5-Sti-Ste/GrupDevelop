@@ -2,7 +2,9 @@
 @import url('navbar.css');
 @import url('footer.css');
 
+
 body{
 
     background-image: url('../asses/img/cielo-estrellado.jpg');
+    scroll-behavior: smooth;
 }

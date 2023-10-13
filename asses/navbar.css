@@ -1,19 +1,24 @@
-nav{
+/* CSS */
+nav {
     width: 100%;
     background-color: rgba(10, 9, 9, 0.8);
     height: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.logo{
+position:static;
+
+
+  }
+  
+  .logo {
     width: 20%;
     height: 100%;
     display: flex;
     align-items: left;
-   }
-
-.nav-text {
+  }
+  
+  .nav-text {
     margin: 0;
     color: white;
     font-size: 1.5rem;
@@ -22,40 +27,45 @@ nav{
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-
-}
-.menu{
+  }
+  
+  .menu {
     position: relative;
-}
-.hamburger-btn{
+  }
+  
+  .hamburger-btn {
     width: 50px;
     height: 50px;
     background: none;
-    border:none;
-}
-.hamburger-btn i{
+    border: none;
+  }
+  
+  .hamburger-btn i {
     font-size: 24px;
-    color: white;
-
-}
-.hamburger-btn .active i{
-    color:#fff;
-
-}
-.video-container{
-    position:absolute;
-    top:50 px;
-    left: 0;
-    width: 100%;
-    height: 0;
+    color: aqua;
+  }
+  
+  .hamburger-btn.active i {
+    color: #fff;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 165%;
+    right: 650%;
+    width: 1500%;
+    height: auto;
     overflow: hidden;
     transition: height 0.3s ease;
-
-}
-.video-container video{
+    z-index: 2;
+  }
+  
+  .video-container video {
     width: 100%;
     height: 100%;
-}
-.menu.open .video-container{
+  }
+  
+  .menu.open .video-container {
     height: calc(100vh - 50px);
-}
+  }
+  
