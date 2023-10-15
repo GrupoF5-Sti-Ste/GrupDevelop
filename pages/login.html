@@ -4,38 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facegrup Develop</title>
-    <link rel="stylesheet" href="../asses/style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="../asses/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
 </head>
 <body>
     <header>
         <nav>
-            <video src="../asses/img/Black White and Green Modern Technology Animated Logo.mp4" alt="Logo" width="350" height="175" autoplay muted loop></video>
-            <p></p>
-            <menu>
-                <button class="hamburger">&#9776;</button>
-                <div class="dropdown-content">
-                    <video src="../asses/img/Blue Modern Space Landscape Illustration Live Streaming Announcement Video.mp4" alt="Welcome" width="50" height="50" autoplay muted loop></video>
+            <img src="../asses/img/logo.png" alt="Logo" class="logo">
+            <p class="nav-text">"Desarrollando sueños, una línea de código a la vez."</p>
+            
+            <div class="menu">
+                
+                <button class="hamburger-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+                <div class="popup" onclick="closePopup()">
+                    <video src="../asses/img/Blue Modern Space Landscape Illustration Live Streaming Announcement Video.mp4" alt="Welcome" width="100%" autoplay muted loop controls></video>
                 </div>
-            </menu>
+            </div>
         </nav>
     </header>
+    
     <main>
         <section class="container">
-            <input type="email" alt="" value="Enter your mail" required>
-            <input type="password" alt="" value="Enter your password" required>
-            <button type="submit"></button>
-            <a href="#"><img src="google.png" alt="Google"></a>
-                <a href="#"><img src="github.png" alt="Github"></a>
-        </section>
+            <form id="login-form" action="./home.html">
+                <div class="input-icon">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="input-icon">
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div>                                                         
+                <a href="https://www.google.com" class="fa-brands fa-google" aria-hidden="true"></a>
+                <a href="https://github.com/GrupoF5-Sti-Ste/GrupDevelop.git" class="fa-brands fa-github" aria-hidden="true"></a>
+            </div>
+        </section>    
     </main>
     
-</body>
-<footer>
-    <a href="#"><img src="instagram.png" alt="Instagram">
+    <footer>
+        <a href="https://instagram.com" class="fa-brands fa-instagram" aria-hidden="true"></a>
+        <a href="https://facebook.com" class="fa-brands fa-facebook" aria-hidden="true"></a>
+        <a href="https://tiktok.com" class="fa-brands fa-tiktok" aria-hidden="true"></a>
+        <p>Copyright FaceGrup Reg Stiven y Stella</p>
+    </footer>
 
-    <a href="#"><img src="facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="tiktok.png" alt="Tiktok"></a>
-</footer>
+    <script src="../js/login.js"></script>
+    <script src="../js/hamburguer.js"></script>    
+</body>
 </html>
