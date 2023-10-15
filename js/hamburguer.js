@@ -1,8 +1,14 @@
-// JS
-const hamburgerBtn = document.querySelector('.hamburger-btn');
-const videoContainer = document.querySelector('.video-container');
-
 function toggleMenu() {
-  hamburgerBtn.classList.toggle('active');
-  videoContainer.classList.toggle('open');
+  var popup = document.querySelector('.popup');
+  
+  if (popup.style.display === 'none') {
+      popup.style.display = 'block';
+  } else {
+      popup.style.display = 'none';
+  }
+}
+
+function closePopup() {
+  var popup = document.querySelector('.popup');
+  popup.style.display = 'none';
 }

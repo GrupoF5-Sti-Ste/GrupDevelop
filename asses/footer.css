@@ -1,34 +1,36 @@
 footer {
     width: 100%;
     background-color: rgba(10, 9, 9, 0.8);
-    height: 5rem;
+    height: 4rem;
     display: flex;
-    align-items: flex-start;
-    font-weight: bold;
-    justify-content: space-around;
-    cursor: pointer;
-    margin-top: 1rem;
-    position: fixed;
-    }
+    align-items: center;
 
-footer .fa-brands {
+    cursor: pointer;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+       
+   
+  }
+  
+  footer .fa-brands {
     font-size: 2rem;
     color: aqua;
-    margin-left: 1rem;
+    margin-left: 2rem;
     text-decoration: none;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-}
 
-footer p {
+  
+  }
+  
+  
+  footer p {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 1px;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    margin-left: 30%;
-    display: flex;
-}
+    margin-right: 3rem;
+    margin-left: 35rem;
+  }
+  
