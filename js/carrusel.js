@@ -1,7 +1,7 @@
 // Obtener los elementos del carrusel
 const carrusel = document.querySelector('.carruseles');
-const btnLeft = document.querySelector('.btn-left');
-const btnRight = document.querySelector('.btn-right');
+const btnLeft = document.querySelector('#btn-left');
+const btnRight = document.querySelector('#btn-right');
 
 // Definir la posición inicial del carrusel
 let posicionActual = 0;
@@ -10,7 +10,7 @@ let posicionActual = 0;
 btnLeft.addEventListener('click', function() {
   if (posicionActual > 0) {
     posicionActual--;
-    carrusel.style.transform = `translateX(-${posicionActual * 100}%)`;
+    carrusel.style.transform = `translateX(-${posicionActual * 25}%)`; /* Actualizado */
   }
 });
 
@@ -18,6 +18,7 @@ btnLeft.addEventListener('click', function() {
 btnRight.addEventListener('click', function() {
   if (posicionActual < carrusel.children.length - 1) {
     posicionActual++;
-    carrusel.style.transform = `translateX(-${posicionActual * 100}%)`;
+    carrusel.style.transform = `translateX(-${posicionActual * 25}%)`; /* Actualizado */
   }
 });
+
